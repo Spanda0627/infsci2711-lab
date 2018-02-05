@@ -6,7 +6,7 @@ try:
 	# MongoClient = MongoClient('localhost',27017)
 
 	'''Connect with mongdb cluster'''
-	MongoClient = MongoClient("mongodb://yfamy123:amy920420@cluster0-shard-00-00-fnmen.mongodb.net:27017,cluster0-shard-00-01-fnmen.mongodb.net:27017,cluster0-shard-00-02-fnmen.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin")
+	MongoClient = MongoClient("mongodb://<Username>:<Password>@cluster0-shard-00-00-fnmen.mongodb.net:27017,cluster0-shard-00-01-fnmen.mongodb.net:27017,cluster0-shard-00-02-fnmen.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin")
 
 	print("Connect successfully!")
 except errors.ConnectionFailure:
