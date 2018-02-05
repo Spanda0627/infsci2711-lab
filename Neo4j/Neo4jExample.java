@@ -30,8 +30,8 @@ public class Neo4jExample {
 
 	public Neo4jExample() {
 		GraphDatabaseFactory dbFactory = new GraphDatabaseFactory();
-		db = dbFactory.newEmbeddedDatabase(
-				new File("C:\\Users\\DAZ45\\AppData\\Roaming\\Neo4j Desktop\\Application\\neo4jDatabases\\database-1595c5e2-6b56-4d58-972e-72f3cfb09153\\installation-3.3.2\\data\\databases\\exampleDB"));
+		db = dbFactory.newEmbeddedDatabase(new File(
+				"C:\\Users\\DAZ45\\AppData\\Roaming\\Neo4j Desktop\\Application\\neo4jDatabases\\database-1595c5e2-6b56-4d58-972e-72f3cfb09153\\installation-3.3.2\\data\\databases\\graph.db"));
 
 	}
 
@@ -55,7 +55,7 @@ public class Neo4jExample {
 			Node alia = db.createNode(NodeLabelSet.person, NodeLabelSet.officer);
 			alia.setProperty("gender", "female");
 			alia.setProperty("name", "alia");
-			alia.setProperty("age", 23);			
+			alia.setProperty("age", 23);
 
 			Node alia2 = db.createNode(NodeLabelSet.person, NodeLabelSet.officer);
 			alia2.setProperty("gender", "female");
